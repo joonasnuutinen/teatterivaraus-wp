@@ -113,6 +113,16 @@ function teatterivaraus_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'Footer', 'teatterivaraus' ),
+		'id'            => 'footer-1',
+		'description'   => esc_html__( 'Add footer widgets here.', 'teatterivaraus' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
 }
 add_action( 'widgets_init', 'teatterivaraus_widgets_init' );
 
@@ -153,9 +163,19 @@ require get_template_directory() . '/inc/template-functions.php';
 require get_template_directory() . '/inc/customizer.php';
 
 /**
+ * Custom shortcodes.
+ */
+require get_template_directory() . '/inc/custom-shortcodes.php';
+
+/**
  * Load Jetpack compatibility file.
  */
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+if ( ! function_exists( 'upload_url' ) ) :
+	function get_upload_url( $file ) {
+		return site_url( '/graphics/' ) . $file;
+	}
+endif;

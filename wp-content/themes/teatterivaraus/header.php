@@ -26,8 +26,12 @@
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
+			<a class="navbar__brand" href="/" rel="home" title="Siirry etusivulle">
+				<img class="navbar__logo navbar__logo--vertical" src="<?= get_upload_url( 'logo-vertical.svg' ) ?>" alt="Teatterivaraus-logo">
+				<img class="navbar__logo navbar__logo--horizontal" src="<?= get_upload_url( 'logo.svg' ) ?>"" alt="Teatterivaraus-logo">
+			</a>
+
 			<?php
-			the_custom_logo();
 			if ( is_front_page() && is_home() ) :
 				?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
