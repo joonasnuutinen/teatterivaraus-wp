@@ -1,9 +1,9 @@
 /*!
-Theme Name: teatterivaraus
-Theme URI: http://underscores.me/
-Author: Underscores.me
-Author URI: http://underscores.me/
-Description: Description
+Theme Name: Teatterivaraus
+Theme URI: https://www.teatterivaraus.fi/
+Author: Joonas Nuutinen
+Author URI: https://www.joonasnuutinen.com/
+Description: Landing pages for Teatterivaraus.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
@@ -395,11 +395,11 @@ input,
 select,
 optgroup,
 textarea {
-	color: #404040;
-	font-family: sans-serif;
+	color: black;
+	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
 	font-size: 1rem;
-	line-height: 1.5;
+	line-height: 1;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -469,7 +469,7 @@ html {
 }
 
 body {
-	background: #fff;
+	background: #fafafa;
 	/* Fallback for when there is no custom background color defined. */
 }
 
@@ -608,6 +608,31 @@ textarea {
 }
 
 /*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.site-header {
+	background: #2d4471;
+	background: linear-gradient(to top left, #152B55, #4d638d);
+	padding: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.site-branding {
+	margin-bottom: 10px;
+}
+
+.brand__logo--vertical {
+	max-width: 200px;
+	width: 100%;
+}
+
+.brand__logo--horizontal {
+	display: none;
+}
+
+/*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
@@ -644,10 +669,12 @@ a:hover, a:active {
 }
 
 .main-navigation ul {
-	display: none;
 	list-style: none;
 	margin: 0;
 	padding-left: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }
 
 .main-navigation ul ul {
@@ -679,13 +706,19 @@ a:hover, a:active {
 }
 
 .main-navigation li {
-	float: left;
 	position: relative;
+	margin: 0 .5em;
 }
 
 .main-navigation a {
 	display: block;
 	text-decoration: none;
+	color: white;
+	font-weight: 300;
+}
+
+.main-navigation a:hover {
+	text-decoration: underline;
 }
 
 /* Small menu. */
@@ -982,3 +1015,7 @@ object {
 .gallery-caption {
 	display: block;
 }
+
+/*--------------------------------------------------------------
+# @media rules
+--------------------------------------------------------------*/

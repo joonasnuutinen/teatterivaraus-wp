@@ -16,6 +16,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700" rel="stylesheet">
 
 	<?php wp_head(); ?>
 </head>
@@ -26,9 +27,9 @@
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
-			<a class="navbar__brand" href="/" rel="home" title="Siirry etusivulle">
-				<img class="navbar__logo navbar__logo--vertical" src="<?= get_upload_url( 'logo-vertical.svg' ) ?>" alt="Teatterivaraus-logo">
-				<img class="navbar__logo navbar__logo--horizontal" src="<?= get_upload_url( 'logo.svg' ) ?>"" alt="Teatterivaraus-logo">
+			<a class="brand" href="/" rel="home">
+				<img class="brand__logo brand__logo--vertical" src="<?= get_upload_url( 'logo-vertical.svg' ) ?>" alt="Teatterivaraus-logo">
+				<img class="brand__logo brand__logo--horizontal" src="<?= get_upload_url( 'logo.svg' ) ?>" alt="Teatterivaraus-logo">
 			</a>
 
 			<?php
@@ -49,7 +50,6 @@
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'teatterivaraus' ); ?></button>
 			<?php
 			wp_nav_menu( array(
 				'theme_location' => 'menu-1',
