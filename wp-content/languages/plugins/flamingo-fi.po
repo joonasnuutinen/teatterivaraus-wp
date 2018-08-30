@@ -1,0 +1,477 @@
+# Translation of Plugins - Flamingo - Stable (latest release) in Finnish
+# This file is distributed under the same license as the Plugins - Flamingo - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2018-08-08 13:34:22+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: fi\n"
+"Project-Id-Version: Plugins - Flamingo - Stable (latest release)\n"
+
+#. translators: date format, see https://php.net/date
+#: includes/class-inbound-message.php:161
+msgid "M j, Y @ H:i"
+msgstr "d.m.Y @ H:i"
+
+#: admin/includes/privacy.php:80
+msgid "Flamingo Inbound Messages: You are not allowed to delete inbound messages."
+msgstr "Flamingo Saapuneet viestit: Sinulla ei ole oikeuksia poistaa saapuneita viestejä."
+
+#: admin/includes/privacy.php:38
+msgid "Flamingo Address Book: You are not allowed to delete contact data."
+msgstr "Flamingo Osoitekirja: Sinulla ei ole oikeuksia poistaa kontakteja."
+
+#: admin/includes/meta-boxes.php:170
+msgid "Update"
+msgstr "Päivitä"
+
+#. translators: %s: message submission date
+#: admin/includes/meta-boxes.php:128
+msgid "Submitted on: %s"
+msgstr "Viesti lähetetty: %s"
+
+#: admin/includes/meta-boxes.php:118
+msgid "Inbound message status"
+msgstr "Saapuneen viestin tila"
+
+#: admin/includes/class-inbound-messages-list-table.php:292
+msgid "View"
+msgstr "Lue"
+
+#: admin/admin.php:700
+msgid "Consent"
+msgstr "Suostumus"
+
+#: admin/admin.php:691
+msgid "Status"
+msgstr "Tila"
+
+#. Description of the plugin/theme
+msgid "A trustworthy message storage plugin for Contact Form 7."
+msgstr "Luotettava lisäosa Contact Form 7:n viestien tallentamiseen."
+
+#: admin/admin.php:705
+msgid "Meta"
+msgstr "Meta"
+
+#. Author of the plugin/theme
+msgid "Takayuki Miyoshi"
+msgstr "Takayuki Miyoshi"
+
+#: includes/class-outbound-message.php:21
+msgid "Flamingo Outbound Message"
+msgstr "Flamingo Lähtevä viesti"
+
+#: includes/class-outbound-message.php:20
+msgid "Flamingo Outbound Messages"
+msgstr "Flamingo Lähtevät viestit"
+
+#: includes/class-inbound-message.php:201
+#: includes/class-outbound-message.php:98
+msgid "(No Title)"
+msgstr "(Ei otsikkoa)"
+
+#: includes/class-inbound-message.php:45
+msgid "Flamingo Inbound Message Channel"
+msgstr "Flamingo Saapuvan viestin kanava"
+
+#: includes/class-inbound-message.php:44
+msgid "Flamingo Inbound Message Channels"
+msgstr "Flamingo Saapuvan viestin kanavat"
+
+#: includes/class-inbound-message.php:28
+msgid "Flamingo Inbound Message"
+msgstr "Flamingo Saapuva viesti"
+
+#: includes/class-contact.php:30
+msgid "Flamingo Contact Tag"
+msgstr "Flamingo Yhteystiedon tunniste"
+
+#: includes/class-contact.php:29
+msgid "Flamingo Contact Tags"
+msgstr "Flamingo Yhteystiedon tunnisteet"
+
+#: includes/class-contact.php:21
+msgid "Flamingo Contact"
+msgstr "Flamingo Yhteystieto"
+
+#: includes/class-contact.php:20
+msgid "Flamingo Contacts"
+msgstr "Flamingo Yhteystiedot"
+
+#: admin/includes/meta-boxes.php:315
+msgid "Send Message"
+msgstr "Lähetä viesti"
+
+#: admin/includes/meta-boxes.php:273
+msgid "Save Draft"
+msgstr "Tallenna luonnos"
+
+#: admin/includes/meta-boxes.php:81
+msgid "Choose from the most used tags"
+msgstr "Valitse käytetyimmistä tunnisteista"
+
+#: admin/includes/meta-boxes.php:78
+msgid "Separate tags with commas"
+msgstr "Erota tunnisteet pilkuilla"
+
+#: admin/includes/meta-boxes.php:31
+msgid "Add Contact"
+msgstr "Lisää Yhteystieto"
+
+#: admin/includes/meta-boxes.php:29
+msgid "Update Contact"
+msgstr "Päivitä Yhteystieto"
+
+#: admin/includes/meta-boxes.php:23
+msgid ""
+"You are about to delete this contact '%s'\n"
+" 'Cancel' to stop, 'OK' to delete."
+msgstr ""
+"Olet poistamassa yhteystietoa '%s'\n"
+" Peruuta poisto valitsemalla 'Peruuta' tai viimeistele poisto valitsemalla 'OK'."
+
+#: admin/includes/class-inbound-messages-list-table.php:312
+#: admin/includes/meta-boxes.php:119 includes/class-inbound-message.php:35
+msgid "Spam"
+msgstr "Roskaposti"
+
+#: admin/includes/class-inbound-messages-list-table.php:253
+#: admin/includes/class-outbound-messages-list-table.php:177
+msgid "Empty Trash"
+msgstr "Tyhjennä roskakori"
+
+#: admin/includes/class-inbound-messages-list-table.php:234
+msgid "View all channels"
+msgstr "Näytä kaikki lähteet"
+
+#: admin/includes/class-inbound-messages-list-table.php:200
+msgid "Mark as Spam"
+msgstr "Merkitse roskapostiksi"
+
+#: admin/includes/class-inbound-messages-list-table.php:198
+#: admin/includes/class-inbound-messages-list-table.php:302
+#: admin/includes/meta-boxes.php:120
+msgid "Not Spam"
+msgstr "Ei roskapostia"
+
+#: admin/includes/class-inbound-messages-list-table.php:194
+#: admin/includes/class-outbound-messages-list-table.php:159
+#: admin/includes/meta-boxes.php:146 admin/includes/meta-boxes.php:295
+msgid "Move to Trash"
+msgstr "Siirrä roskakoriin"
+
+#: admin/includes/class-inbound-messages-list-table.php:192
+#: admin/includes/class-outbound-messages-list-table.php:157
+#: admin/includes/meta-boxes.php:144 admin/includes/meta-boxes.php:293
+msgid "Delete Permanently"
+msgstr "Poista pysyvästi"
+
+#: admin/includes/class-inbound-messages-list-table.php:188
+#: admin/includes/class-outbound-messages-list-table.php:153
+msgid "Restore"
+msgstr "Palauta"
+
+#: admin/includes/class-inbound-messages-list-table.php:152
+#: admin/includes/class-outbound-messages-list-table.php:117
+msgctxt "posts"
+msgid "Trash <span class=\"count\">(%s)</span>"
+msgid_plural "Trash <span class=\"count\">(%s)</span>"
+msgstr[0] "Roskakori <span class=\"count\">(%s)</span>"
+msgstr[1] "Roskakori <span class=\"count\">(%s)</span>"
+
+#: admin/includes/class-inbound-messages-list-table.php:127
+msgctxt "posts"
+msgid "Spam <span class=\"count\">(%s)</span>"
+msgid_plural "Spam <span class=\"count\">(%s)</span>"
+msgstr[0] "Roskaposti <span class=\"count\">(%s)</span>"
+msgstr[1] "Roskaposti <span class=\"count\">(%s)</span>"
+
+#: admin/includes/class-inbound-messages-list-table.php:111
+#: admin/includes/class-outbound-messages-list-table.php:98
+msgctxt "posts"
+msgid "Inbox <span class=\"count\">(%s)</span>"
+msgid_plural "Inbox <span class=\"count\">(%s)</span>"
+msgstr[0] "Saapuneet viestit <span class=\"count\">(%s)</span>"
+msgstr[1] "Saapuneet viestit <span class=\"count\">(%s)</span>"
+
+#: admin/includes/class-inbound-messages-list-table.php:17
+msgid "Channel"
+msgstr "Lomake"
+
+#: admin/includes/class-contacts-list-table.php:302
+#: admin/includes/class-inbound-messages-list-table.php:402
+#: admin/includes/class-outbound-messages-list-table.php:251
+msgid "Y/m/d"
+msgstr "d.m.Y"
+
+#: admin/includes/class-contacts-list-table.php:300
+#: admin/includes/class-inbound-messages-list-table.php:400
+#: admin/includes/class-outbound-messages-list-table.php:249
+msgid "%s ago"
+msgstr "%s sitten"
+
+#: admin/includes/class-contacts-list-table.php:293
+#: admin/includes/class-inbound-messages-list-table.php:393
+#: admin/includes/class-outbound-messages-list-table.php:242
+#: includes/class-outbound-message.php:86
+msgid "Y/m/d g:i:s A"
+msgstr "H:i:s m.d.Y"
+
+#. translators: 1: contact channel name, 2: contact count
+#: admin/includes/class-contacts-list-table.php:270
+msgctxt "contact history"
+msgid "%1$s (%2$d)"
+msgstr "%1$s (%2$d)"
+
+#: admin/includes/class-contacts-list-table.php:241
+msgid "Comment (%d)"
+msgstr "Kommentti (%d)"
+
+#: admin/includes/class-contacts-list-table.php:227
+msgid "User"
+msgstr "Käyttäjä"
+
+#: admin/includes/class-contacts-list-table.php:187
+msgid "No Tags"
+msgstr "Ei tunnisteita"
+
+#: admin/includes/class-contacts-list-table.php:171
+#: admin/includes/class-inbound-messages-list-table.php:318
+#: admin/includes/class-outbound-messages-list-table.php:221
+msgid "Edit &#8220;%s&#8221;"
+msgstr "Muokkaa &#8220;%s&#8221;"
+
+#: admin/includes/class-contacts-list-table.php:165
+#: admin/includes/class-outbound-messages-list-table.php:215
+msgid "Edit"
+msgstr "Muokkaa"
+
+#: admin/includes/class-contacts-list-table.php:132
+#: admin/includes/class-inbound-messages-list-table.php:247
+msgid "Export"
+msgstr "Vienti"
+
+#: admin/includes/class-contacts-list-table.php:129
+#: admin/includes/class-inbound-messages-list-table.php:243
+#: admin/includes/class-outbound-messages-list-table.php:172
+msgid "Filter"
+msgstr "Suodata"
+
+#: admin/includes/class-contacts-list-table.php:122
+msgid "View all tags"
+msgstr "Näytä kaikki tunnisteet"
+
+#: admin/includes/class-contacts-list-table.php:96
+#: admin/includes/meta-boxes.php:11
+msgid "Delete"
+msgstr "Poista"
+
+#: admin/includes/class-contacts-list-table.php:16
+msgid "Last Contact"
+msgstr "Viimeisin yhteydenotto"
+
+#: admin/includes/class-contacts-list-table.php:15
+msgid "History"
+msgstr "Historia"
+
+#: admin/edit-outbound-form.php:60
+msgid "Body"
+msgstr "Viesti"
+
+#: admin/edit-outbound-form.php:42
+msgid "To"
+msgstr "Vastaanottaja"
+
+#: admin/edit-outbound-form.php:21
+msgid "Outbound Message"
+msgstr "Lähtevä viesti"
+
+#: admin/edit-outbound-form.php:19
+msgid "Compose a Message"
+msgstr "Kirjoita viesti"
+
+#: admin/edit-inbound-form.php:41 admin/edit-outbound-form.php:50
+#: admin/includes/class-inbound-messages-list-table.php:16
+#: admin/includes/class-outbound-messages-list-table.php:15
+msgid "From"
+msgstr "Lähettäjä"
+
+#: admin/edit-inbound-form.php:36 admin/edit-outbound-form.php:55
+#: admin/includes/class-inbound-messages-list-table.php:15
+#: admin/includes/class-outbound-messages-list-table.php:14
+msgid "Subject"
+msgstr "Aihe"
+
+#: admin/edit-inbound-form.php:17
+msgid "Inbound Message"
+msgstr "Saapunut viesti"
+
+#: admin/edit-contact-form.php:37
+msgid "Enter email here"
+msgstr "Syötä sähköpostiosoite"
+
+#: admin/edit-contact-form.php:17
+msgid "Edit Contact"
+msgstr "Muokkaa yhteystietoa"
+
+#: admin/admin.php:855
+msgid "Outbound Messages"
+msgstr "Lähtevät viestit"
+
+#: admin/admin.php:823
+msgid "Send"
+msgstr "Lähetä"
+
+#: admin/admin.php:757 admin/admin.php:874
+msgid "Search Messages"
+msgstr "Etsi viesteistä"
+
+#: admin/admin.php:719 admin/admin.php:836
+msgid "Messages"
+msgstr "Viestit"
+
+#: admin/admin.php:695
+msgid "Fields"
+msgstr "Kentät"
+
+#: admin/admin.php:651 admin/includes/class-inbound-messages-list-table.php:18
+#: admin/includes/class-outbound-messages-list-table.php:16
+msgid "Date"
+msgstr "Päiväys"
+
+#: admin/admin.php:576
+msgid "You are not allowed to unspam this item."
+msgstr "Sinulla ei ole oikeutta poistaa roskaposti-merkintää tältä viestiltä."
+
+#: admin/admin.php:540
+msgid "You are not allowed to spam this item."
+msgstr "Sinulla ei ole oikeutta merkitä tätä viestiä roskapostiksi."
+
+#: admin/admin.php:460
+msgid "Error in restoring from Trash."
+msgstr "Virhe palautettaessa Roskakorista."
+
+#: admin/admin.php:456
+msgid "You are not allowed to restore this item from the Trash."
+msgstr "Sinulla ei ole oikeutta palauttaa tätä viestiä Roskakorista."
+
+#: admin/admin.php:422
+msgid "Error in moving to Trash."
+msgstr "Virhe siirrettäessä Roskakoriin."
+
+#: admin/admin.php:418
+msgid "You are not allowed to move this item to the Trash."
+msgstr "Sinulla ei ole oikeutta siirtää tätä viestiä Roskakoriin."
+
+#: admin/admin.php:340
+msgid "Search Contacts"
+msgstr "Etsi yhteystiedoista"
+
+#: admin/admin.php:329 admin/admin.php:744 admin/admin.php:861
+msgid "Search results for &#8220;%s&#8221;"
+msgstr "Hakutulokset kyselylle &#8220;%s&#8221;"
+
+#: admin/admin.php:304
+msgid "Contacts"
+msgstr "Yhteystiedot"
+
+#: admin/admin.php:289 admin/includes/class-contacts-list-table.php:13
+msgid "Name"
+msgstr "Nimi"
+
+#: admin/admin.php:286 admin/includes/class-contacts-list-table.php:14
+msgid "Tags"
+msgstr "Tunnisteet"
+
+#: admin/admin.php:283 admin/includes/meta-boxes.php:268
+msgid "Save"
+msgstr "Tallenna"
+
+#: admin/admin.php:207 admin/includes/meta-boxes.php:196
+msgid "Last name"
+msgstr "Sukunimi"
+
+#: admin/admin.php:206 admin/includes/meta-boxes.php:191
+msgid "First name"
+msgstr "Etunimi"
+
+#: admin/admin.php:205 admin/includes/meta-boxes.php:186
+msgid "Full name"
+msgstr "Koko nimi"
+
+#: admin/admin.php:204 admin/includes/class-contacts-list-table.php:12
+msgid "Email"
+msgstr "Sähköposti"
+
+#: admin/admin.php:176 admin/admin.php:507
+msgid "Error in deleting."
+msgstr "Virhe poistamisessa."
+
+#: admin/admin.php:172 admin/admin.php:503
+msgid "You are not allowed to delete this item."
+msgstr "Et voi poistaa tätä kohdetta. Tarvitset laajemmat oikeudet."
+
+#: admin/admin.php:127 admin/admin.php:280 admin/admin.php:372
+#: admin/admin.php:686 admin/admin.php:800
+msgid "You are not allowed to edit this item."
+msgstr "Sinulla ei ole muokkausoikeutta."
+
+#: admin/admin.php:95 admin/admin.php:107
+msgid "Messages updated."
+msgstr "Viestit päivitetty."
+
+#: admin/admin.php:105
+msgid "Messages got marked as not spam."
+msgstr "Viestit merkitty ei-roskapostiksi."
+
+#: admin/admin.php:103
+msgid "Messages got marked as spam."
+msgstr "Viestit merkitty roskapostiksi."
+
+#: admin/admin.php:101
+msgid "Messages deleted."
+msgstr "Viestit poistettu."
+
+#: admin/admin.php:99
+msgid "Messages restored."
+msgstr "Viestit palautettu."
+
+#: admin/admin.php:97
+msgid "Messages trashed."
+msgstr "Viestit siirretty roskakoriin."
+
+#: admin/admin.php:93
+msgid "Contact deleted."
+msgstr "Yhteystieto poistettu."
+
+#: admin/admin.php:91
+msgid "Contact updated."
+msgstr "Yhteystieto päivitetty."
+
+#: admin/admin.php:30 admin/admin.php:738
+msgid "Inbound Messages"
+msgstr "Saapuneet viestit"
+
+#: admin/admin.php:29 admin/includes/privacy.php:13
+#: includes/class-inbound-message.php:27
+msgid "Flamingo Inbound Messages"
+msgstr "Flamingo Saapuneet viestit"
+
+#: admin/admin.php:22
+msgid "Address Book"
+msgstr "Osoitekirja"
+
+#. #-#-#-#-#  flamingo-code.pot (Flamingo 1.9)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: admin/admin.php:15
+msgid "Flamingo"
+msgstr "Flamingo"
+
+#: admin/admin.php:14 admin/admin.php:21 admin/admin.php:323
+#: admin/includes/privacy.php:9
+msgid "Flamingo Address Book"
+msgstr "Flamingo Osoitekirja"
