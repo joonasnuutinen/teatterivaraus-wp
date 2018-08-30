@@ -17,6 +17,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
 	<?php wp_head(); ?>
 </head>
@@ -27,7 +28,7 @@
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
-			<a class="brand" href="/" rel="home">
+			<a class="brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 				<img class="brand__logo brand__logo--vertical" src="<?= get_upload_url( 'logo-vertical.svg' ) ?>" alt="Teatterivaraus-logo">
 				<img class="brand__logo brand__logo--horizontal" src="<?= get_upload_url( 'logo.svg' ) ?>" alt="Teatterivaraus-logo">
 			</a>
@@ -47,16 +48,16 @@
 				?>
 				<p class="site-description"><?php echo $teatterivaraus_description; /* WPCS: xss ok. */ ?></p>
 			<?php endif; ?>
-		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation">
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
-			?>
-		</nav><!-- #site-navigation -->
+			<nav id="site-navigation" class="main-navigation">
+				<?php
+				wp_nav_menu( array(
+					'theme_location' => 'menu-1',
+					'menu_id'        => 'primary-menu',
+				) );
+				?>
+			</nav><!-- #site-navigation -->
+		</div><!-- .site-branding -->
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

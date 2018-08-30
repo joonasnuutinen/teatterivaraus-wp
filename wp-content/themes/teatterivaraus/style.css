@@ -41,6 +41,16 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
+:root {
+	--primary-color: #4d638d;
+	--secondary-color: #2d4471;
+	--tertiary-color: #152b55;
+	--primary-gradient: linear-gradient(var(--primary-color), var(--secondary-color));
+	--secondary-gradient: linear-gradient(to top left, var(--tertiary-color), var(--primary-color));
+	--dark-color: #061738;
+	--box-shadow: 0 1px 4px #ccc;
+}
+
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -459,6 +469,7 @@ big {
 --------------------------------------------------------------*/
 html {
 	box-sizing: border-box;
+	background: #222;
 }
 
 *,
@@ -530,22 +541,14 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: 1px solid;
-	border-color: #ccc #ccc #bbb;
-	border-radius: 3px;
-	background: #e6e6e6;
 	color: rgba(0, 0, 0, 0.8);
-	font-size: 12px;
-	font-size: 0.75rem;
 	line-height: 1;
-	padding: .6em 1em .4em;
 }
 
 button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-	border-color: #ccc #bbb #aaa;
 }
 
 button:active, button:focus,
@@ -555,7 +558,6 @@ input[type="reset"]:active,
 input[type="reset"]:focus,
 input[type="submit"]:active,
 input[type="submit"]:focus {
-	border-color: #aaa #bbb #bbb;
 }
 
 input[type="text"],
@@ -578,6 +580,7 @@ textarea {
 	border: 1px solid #ccc;
 	border-radius: 3px;
 	padding: 3px;
+	max-width: 100%;
 }
 
 input[type="text"]:focus,
@@ -607,6 +610,43 @@ textarea {
 	width: 100%;
 }
 
+.btn {
+	display: inline-block;
+	border: none;
+	padding: .3em .5em;
+	font-size: 1rem;
+	border-radius: 2px;
+	cursor: pointer;
+	margin-right: .1rem;
+	font-family: inherit;
+}
+
+.btn--primary {
+	background: var(--primary-color);
+	background: var(--primary-gradient);
+	color: white!important;
+	text-decoration: none!important;
+}
+
+.btn--big {
+	padding: .5em 1.5em;
+}
+
+/*--------------------------------------------------------------
+## Contact Form 7
+--------------------------------------------------------------*/
+div.wpcf7-response-output {
+	margin: 0;
+	padding: .5em;
+	background: #940101;
+	color: white;
+	border: none;
+}
+
+div.wpcf7-validation-errors {
+	border: none;
+}
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -614,22 +654,33 @@ textarea {
 	background: #2d4471;
 	background: linear-gradient(to top left, #152B55, #4d638d);
 	padding: 5px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 }
 
 .site-branding {
-	margin-bottom: 10px;
+	margin: 10px auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 900px;
+}
+
+.brand__logo {
+	width: 100%;
+	max-width: 240px;
 }
 
 .brand__logo--vertical {
 	max-width: 200px;
-	width: 100%;
+	margin-bottom: 14px;
 }
 
 .brand__logo--horizontal {
+	width: 240px;
 	display: none;
+}
+
+.site-title {
+	margin: 0;
 }
 
 /*--------------------------------------------------------------
@@ -638,16 +689,20 @@ textarea {
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
-a {
+a,
+a:visited,
+a:hover,
+a:focus,
+a:active {
 	color: royalblue;
 }
 
-a:visited {
-	color: purple;
+a {
+	text-decoration: none;
 }
 
-a:hover, a:focus, a:active {
-	color: midnightblue;
+a:hover {
+	text-decoration: underline;
 }
 
 a:focus {
@@ -707,7 +762,7 @@ a:hover, a:active {
 
 .main-navigation li {
 	position: relative;
-	margin: 0 .5em;
+	margin: 0 .5rem;
 }
 
 .main-navigation a {
@@ -730,9 +785,6 @@ a:hover, a:active {
 @media screen and (min-width: 37.5em) {
 	.menu-toggle {
 		display: none;
-	}
-	.main-navigation ul {
-		display: block;
 	}
 }
 
@@ -884,14 +936,199 @@ a:hover, a:active {
 }
 
 .page-content,
-.entry-content,
 .entry-summary {
 	margin: 1.5em 0 0;
+}
+
+.entry-header {
+	padding: 2rem .5rem 0;
+}
+
+.entry-title {
+	font-size: 2rem;
+	margin: .5rem auto 1rem;
+	max-width: 900px;
+}
+
+.entry-content {
+	line-height: 1.3;
 }
 
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
+}
+
+/*--------------------------------------------------------------
+### Sections
+--------------------------------------------------------------*/
+.section {
+	text-align: center;
+	padding: 2rem .5rem;
+}
+
+.section__content {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.section__title {
+	margin: 0 0 1rem;
+}
+
+.section__figure {
+	margin: 0 auto 1rem;
+	max-width: 400px;
+}
+
+.feature {
+	margin-top: 3rem;
+}
+
+.feature__title {
+	margin: 0;
+}
+
+.feature__figure {
+	max-width: 400px;
+	margin: 0 auto .25rem;
+}
+
+.feature__image {
+	max-width: 320px;
+}
+
+/* Long */
+.section--long {
+	padding-top: 0;
+	text-align: left;
+}
+
+/* Hero */
+.section--hero {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	box-shadow: var(--box-shadow);
+	background: white;
+}
+
+.section--hero .section__title {
+	font-weight: 300;
+	font-size: 2.8rem;
+	margin-bottom: 1.5rem;
+}
+
+/* Web form */
+.section--webform {
+	margin-top: 2px;
+}
+
+.section--webform .section__figure {
+	box-shadow: 0 1px 4px #ccc;
+	background: white;
+	padding: .5rem 0;
+}
+
+.section--webform .section__image {
+	max-width: 320px;
+}
+
+/* Dashboard */
+.section--dashboard {
+	box-shadow: var(--box-shadow);
+	background: white;
+}
+
+/* Print */
+.section--print {
+	box-shadow: var(--box-shadow);
+	background: white;
+	margin-top: 3rem;
+}
+
+.section--print .section__figure {
+	max-width: 600px;
+	margin-top: 2rem;
+}
+
+/* Other features */
+.section--other-features {
+	margin-top: 2px;
+}
+
+.section--other-features .feature {
+	background: white;
+	box-shadow: var(--box-shadow);
+	text-align: left;
+	margin-top: 0;
+	margin-bottom: 1rem;
+	padding: .5rem;
+}
+
+.section--other-features .feature__title {
+	margin-bottom: .5rem;
+	color: var(--dark-color);
+}
+
+.section--other-features p {
+	margin: 0;
+}
+
+@media screen and (min-width: 640px) {
+	.section--other-features .feature-group {
+		width: 50%;
+		float: left;
+		padding: 0 .5rem;
+	}
+	
+	.section--other-features .feature-group:first-child {
+		padding-left: 0;
+	}
+}
+
+/* Price */
+.section--price {
+	box-shadow: var(--box-shadow);
+	background: white;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
+/*--------------------------------------------------------------
+## Custom classes
+--------------------------------------------------------------*/
+.icon {
+	margin-right: 2px;
+}
+
+.price {
+	color: var(--dark-color);
+}
+
+.notice {
+	opacity: .5;
+	margin-top: 1rem;
+}
+
+.copyright {
+	margin-top: 2rem;
+	font-size: .8em;
+}
+
+.privacy {
+	font-size: .8em;
+}
+
+.box {
+	box-shadow: 0 1px 4px #777;
+	background: white;
+	margin-bottom: 1rem;
+	padding: .5rem;
+}
+
+.small-title {
+	font-size: 1rem;
+	margin: 1rem 0 .5rem;
 }
 
 /*--------------------------------------------------------------
@@ -903,6 +1140,34 @@ a:hover, a:active {
 
 .bypostauthor {
 	display: block;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.site-footer {
+	background: var(--secondary-color);
+	background: var(--secondary-gradient);
+	padding: 1rem .5rem;
+	color: white;
+	line-height: 1.3;
+	text-align: center;
+	font-weight: 300;
+}
+
+.site-footer .menu {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.site-footer a {
+	color: white;
+	text-decoration: none;
+}
+
+.site-footer a:hover {
+	text-decoration: underline;
 }
 
 /*--------------------------------------------------------------
@@ -1019,3 +1284,31 @@ object {
 /*--------------------------------------------------------------
 # @media rules
 --------------------------------------------------------------*/
+@media screen and (max-width: 240px) {
+	.main-navigation ul {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.main-navigation li {
+		margin: .2em 0;
+	}
+}
+
+@media screen and (min-width: 510px) {
+	.brand__logo--vertical {
+		display: none;
+	}
+
+	.brand__logo--horizontal {
+		display: inline-block;
+	}
+
+	.site-branding {
+		flex-direction: row;
+	}
+
+	.main-navigation ul {
+		justify-content: flex-end;
+	}
+}
